@@ -1,30 +1,39 @@
-/* General settings */
+/* GENERAL SETTINGS */
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
 }
 /********************************/
 
-/* Header */
+/************ HEADER ************/
 
 header {
 	width: 100%;
 	height: 50px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
-	background-color: #333;
+	background-color: #000;
 	color: #ddd;
 }
 
 #header_logo_container {
-	background-color: goldenrod;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
+#header_logo {
+	letter-spacing: .1em;
+}
+#header_logo span {
+	color: red;
 }
 
 #header_searchbar_container {
-	background-color: cyan;
+	background-color: #fff;
 	display: flex;
 	justify-content: space-around;
 }
@@ -34,7 +43,7 @@ header {
 }
 
 #header_links_container {
-	width: 25%;
+	width: 33%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -50,24 +59,27 @@ header {
 	align-items: center;
 	width: 33%;
 	text-align: center;
-	/*margin: 0 20px;
-	padding: 10px;
-	justify-content: space-around;*/
+	text-transform: uppercase;
 }
+
 .header_links_listitem:hover {
-	background-color: orange;
-	color: #333;
+	background-color: red;
+	color: #000;
 }
 
 .header_links_listitem a {
 	text-decoration: none;
 	color: #ddd;
 	height: 100%;
-	transform: translateY(+33%);
 	margin: auto;
+	transform: translateY(+30%);
 }
 
 .header_links_listitem:hover a{
-	color: #333;
+	color: #000;
 }
-/* Header end */
+/********** HEADER end **********/
+
+
+/************ FOOTER ************/
+/********** FOOTER end **********/
