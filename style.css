@@ -43,7 +43,7 @@ header {
 }
 
 .header_links_container {
-	width: 33%;
+	width: 50%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -56,7 +56,7 @@ header {
 .header_links_listitem {
 	height: 100%;
 	display: flex;
-	align-items: center;
+	align-items: column;
 	width: 33%;
 	text-align: center;
 	text-transform: uppercase;
@@ -71,12 +71,37 @@ header {
 	text-decoration: none;
 	color: #ddd;
 	height: 100%;
+	width: 100%;
 	margin: auto;
-	transform: translateY(+30%);
+	display:flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .header_links_listitem:hover a{
 	color: #000;
+}
+
+.active_page {
+	height: 100%;
+	display: flex;
+	align-items: column;
+	width: 33%;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: red;
+	color: #000;
+}
+.active_page a {
+	text-decoration: none;
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	color: #000;
+
 }
 /********** HEADER end **********/
 
