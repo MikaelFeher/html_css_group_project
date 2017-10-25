@@ -1,0 +1,73 @@
+/* General settings */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/********************************/
+
+/* Header */
+
+header {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #333;
+	color: #ddd;
+}
+
+#header_logo_container {
+	background-color: goldenrod;
+
+}
+
+#header_searchbar_container {
+	background-color: cyan;
+	display: flex;
+	justify-content: space-around;
+}
+
+#header_searchbar_icon {
+	margin-right: 7px;
+}
+
+#header_links_container {
+	width: 25%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%
+}
+
+#header_links_list {
+}
+
+.header_links_listitem {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	width: 33%;
+	text-align: center;
+	/*margin: 0 20px;
+	padding: 10px;
+	justify-content: space-around;*/
+}
+.header_links_listitem:hover {
+	background-color: orange;
+	color: #333;
+}
+
+.header_links_listitem a {
+	text-decoration: none;
+	color: #ddd;
+	height: 100%;
+	transform: translateY(+33%);
+	margin: auto;
+}
+
+.header_links_listitem:hover a{
+	color: #333;
+}
+/* Header end */
