@@ -105,6 +105,8 @@ header {
 	color: #000;
 
 }
+
+
 /********** HEADER end **********/
 
 
@@ -150,8 +152,12 @@ header {
 .labels{
 	display: flex;
 	justify-content: space-between;
-	width: 250px;
+	width: 230px;
 	margin-bottom: 10px;
+}
+
+select{
+	margin-bottom:10px;
 }
 /* This is where the main css goes */
 
