@@ -27,18 +27,69 @@
 	<!-- HEADER end -->
 
 	<!-- MAIN CONTENT -->
+	<main id="checkout">
+		<h2>Varukorgen</h2>
+
+		<div class="all-items">
+			<div class="headline">
+				<ul>
+					<li>Namn</li>
+					<li>Antal</li>
+					<li>Pris</li>
+				</ul>
+			</div>
+
+			<div class="list-item">
+				<ul>
+					<li>&lt;div&gt;</li>
+					<li>3</li>
+					<li>30 :-</li>
+				</ul>
+				<button>ta bort</button>
+			</div>
+			<button>Töm korgen</button>
+		</div>
+
+		<div class="left-side">
+			<h2>Kunduppgifter</h2>
+
+			<div class="customer-information">
+				<form>
+					<div class="left-side">
+						<div>
+							<label>Förnamn: <input type="text" name="firstname" required pattern="[A-z]+" minlength="1"></label>
+						</div>
+						<div>
+							<label>Efternamn: <input type="text" name="lastname" required pattern="[A-z]+" minlength="1"></label>
+						</div>
+						<div>
+							<label>Adress: <input type="text" name="address" required></label>
+						</div>
+						<div>
+							<label>Postnr: <input type="text" name="zipcode" required pattern="[0-9]{5}"></label>
+						</div>
+						<div>
+							<label>Postort: <input type="text" name="city" required pattern="[A-z- ]+" minlength="1"></label>
+						</div>
+						<div>
+							<label>Email: <input type="email" name="email" required></label>
+						</div>
+					</div>
+
+					<div class="right-side">
+						Leveransmetod:
+						<label><input type="radio" name="delivery" value="standard">Standard</label>
+						<label><input type="radio" name="delivery" value="express">Express</label>
+						<label><input type="radio" name="delivery" value="home">Home delivery</label>
+
+						<button>Betala</button>
+					</div>
+				</form>
+			</div>
+		</div>
 
 
-
-
-
-		<!-- Put main content here... -->
-
-
-
-
-
-
+	</main>
 	<!-- MAIN CONTENT END -->
 
 	<!-- FOOTER -->
