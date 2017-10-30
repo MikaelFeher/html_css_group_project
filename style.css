@@ -1,114 +1,120 @@
 /* GENERAL SETTINGS */
+
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: 'Lato', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
+
+
 /********************************/
-html,body{
-	height:100%;
+
+html, body {
+  height: 100%;
 }
+
+
 /************ HEADER ************/
 
 header {
-	width: 100%;
-	height: 50px;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	background-color: #000;
-	color: #ddd;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000;
+  color: #ddd;
 }
 
 .header_logo_container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header_logo {
-	letter-spacing: .1em;
+  letter-spacing: .1em;
 }
+
 .header_logo span {
-	color: red;
+  color: red;
 }
 
 .header_searchbar_container {
-	background-color: #fff;
-	display: flex;
-	justify-content: space-around;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
 }
 
 .header_searchbar_icon {
-	margin-right: 7px;
+  margin-right: 7px;
 }
 
 .header_links_container {
-	width: 50%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 100%
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%
 }
 
-.header_links_list {
-}
+.header_links_list {}
 
 .header_links_listitem {
-	height: 100%;
-	display: flex;
-	align-items: column;
-	width: 33%;
-	text-align: center;
-	text-transform: uppercase;
+  height: 100%;
+  display: flex;
+  align-items: column;
+  width: 33%;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .header_links_listitem:hover {
-	background-color: red;
-	color: #000;
+  background-color: red;
+  color: #000;
 }
 
 .header_links_listitem a {
-	text-decoration: none;
-	color: #ddd;
-	height: 100%;
-	width: 100%;
-	margin: auto;
-	display:flex;
-	align-items: center;
-	justify-content: center;
+  text-decoration: none;
+  color: #ddd;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.header_links_listitem:hover a{
-	color: #000;
+.header_links_listitem:hover a {
+  color: #000;
 }
 
 .active_page {
-	height: 100%;
-	display: flex;
-	align-items: column;
-	width: 33%;
-	text-align: center;
-	text-transform: uppercase;
-	background-color: red;
-	color: #000;
+  height: 100%;
+  display: flex;
+  align-items: column;
+  width: 33%;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: red;
+  color: #000;
 }
-.active_page a {
-	text-decoration: none;
-	height: 100%;
-	width: 100%;
-	margin: auto;
-	display:flex;
-	align-items: center;
-	justify-content: center;
-	color: #000;
 
+.active_page a {
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
 }
 
 
 /********** HEADER end **********/
-
 
 
 /********* MAIN CONTENT *********/
@@ -117,178 +123,207 @@ header {
 /******** PRODUCT CONTENT ********/
 
 #page {
-	text-align:center;
-	margin-top: 100px;
+  text-align: center;
+  margin-top: 100px;
 }
 
 #logo {
-	margin-bottom: 50px;
+  margin-bottom: 50px;
 }
-
-
-
 
 #main_product_container {
-	background-color: white;
-	width:800px;
-	margin: auto;
-	display: flex;
-	justify-content: space-around;
+  background-color: white;
+  width: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
 }
-.table_container{
-	padding: 5px;
+
+.table_container {
+  padding: 5px;
 }
 
 table {
-	font-family: arial,sans-serif;
-	border-collapse:collapse;
-	/* width: 100%; */
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  /* width: 100%; */
 }
 
-td, th{
-	text-align: left;
-	padding: 8px;
-	border: 1px solid #dddddd;
+td, th {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #dddddd;
 }
 
 tr:nth-child(even) {
-	background-color: #dddddd;
+  background-color: #dddddd;
 }
 
 .product_buy_button {
-	padding: 10px 20px;
-	border-radius: 10px;
-	background-color: green;
-	color: white;
-	border: none;
-	letter-spacing: .1em;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  letter-spacing: .1em;
 }
+
 .product_buy_button:active {
-	background-color: rgba(0, 100, 0, 0.5);
+  background-color: rgba(0, 100, 0, 0.5);
 }
+
+
 /******** PRODUCT CONTENT END ********/
 
 
-
 /********CONTACT CONTENT********/
-.formdiv{
-	height:81%;
-	display:flex;
-	justify-content:center;
-	align-items:center;
+
+.formdiv {
+  height: 81%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
-
-.formField{
-	padding:20px 100px 20px 100px;
+.contactForm{
+	background:green;
+	padding: 20px;
 	border-radius: 5px;
-	border-color: #42afc7;
-	background-color:#ff5a5a;
+	box-shadow: 5px 5px 10px #888888;
 }
 
-.formHeading{
-	margin-bottom: 20px;
+.formField {
+  padding: 20px 70px 20px 50px;
+  border-radius: 5px;
+  border-color: #42afc7;
+  background-color: #ff5a5a;
+
 }
 
-.labelBox{
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
+.formHeading {
+  margin-bottom: 20px;
 }
 
-.labels{
-	display: flex;
-	justify-content: space-between;
-	width: 230px;
-	margin-bottom: 10px;
+.labelBox {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
-
-.message{
-	max-height: 200px;
-	max-width: 1000px;
-	min-width: 250px;
-	resize: none;
+.labels {
+  display: flex;
+  justify-content: space-between;
+  width: 230px;
+  margin-bottom: 10px;
 }
 
-select{
-	margin-bottom:10px;
+.message {
+  max-height: 200px;
+  max-width: 1000px;
+  min-width: 250px;
+  resize: none;
 }
 
-.formButton{
-	display:flex;
-	justify-content:flex-end;
+select {
+  margin-bottom: 10px;
 }
+
+.formButton {
+	color:red;
+	background-color: green;
+  display: flex;
+  justify-content: flex-end;
+}
+
 /********CONTACT END********/
-/* This is where the main css goes */
 
+
+/* This is where the main css goes */
 
 
 /******* MAIN CONTENT end *******/
 
 
-
 /************ FOOTER ************/
+
 footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 85px;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	background-color: #000;
-	color: #ddd;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 85px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000;
+  color: #ddd;
 }
 
 .footer_social_icons_container {
-	margin-top: 10px;
-	display: flex;
-	justify-content: center;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .footer_social_icons_container img {
-	height: 30px;
-	margin: 7px;
+  height: 30px;
+  margin: 7px;
 }
 
 .footer_contact_list {
-	list-style-type: none;
-	margin-top: 10px;
+  list-style-type: none;
+  margin-top: 10px;
 }
-/********** FOOTER end **********/
 
+
+/********** FOOTER end **********/
 
 
 /*Media queries*/
 
-@media (max-width:768px) {
+@media screen and (max-width:768px) {
+  /******CONTACT FORM START*******/
+  .formHeading {
+    font-size: 20px;
+  }
+  .formField {
+    padding: 10px 25px 10px 25px;
+    border-radius: 5px;
+  }
+  select {
+    margin-bottom: 5px;
+  }
+  .labels {
+    margin-bottom: 5px;
+  }
+  .message {
+    width: 230px;
+    resize: none;
+  }
+  /******CONTACT FORM END*******/
 
-
-
-
-/******CONTACT FORM START*******/
-	.formHeading{
+	header div h1{
 		font-size: 20px;
 	}
+  header{
+    justify-content: space-around;
 
-	.formField{
-		padding:10px 25px 10px 25px;
-		border-radius: 5px;
+  }
+	header div a{
+		font-size: 10px;
 	}
-
-		select{
-			margin-bottom:5px;
-		}
-
-.labels{
-	margin-bottom: 5px;
+.header_links_listitem{
+  padding-right:10px;
+  padding-left: 10px;
 }
 
-	.message{
-		width: 230px;
-		resize: none;
+	.header_searchbar_container, .header_searchbar_container{
+		display: none;
 	}
-	/******CONTACT FORM END*******/
+
+footer{
+	font-size: 10px;
 }
+}
+
+
 }
