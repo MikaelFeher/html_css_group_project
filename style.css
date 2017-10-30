@@ -114,39 +114,29 @@ header {
 /********* MAIN CONTENT *********/
 
 /********CONTACT CONTENT********/
-#formdiv{
+.formdiv{
 	height:81%;
 	display:flex;
 	justify-content:center;
 	align-items:center;
 
 }
-#contactForm{
-	max-height: 500px;
-}
-#textarea{
-	display:flex;
-	justify-content:flex-end;
-}
-#labelBox{
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
+
+.formField{
+	padding:20px 100px 20px 100px;
+	border-radius: 5px;
+	border-color: #42afc7;
+	background-color:#ff5a5a;
 }
 
-#formHeading{
+.formHeading{
 	margin-bottom: 20px;
 }
 
-#formField{
-	padding:20px 100px 20px 100px;
-	border-radius: 5px;
-	background-color: rgba(255, 0, 0, 0.11)
-}
-#message{
-	max-height: 200px;
-	max-width: 1000px;
-	min-width: 250px;
+.labelBox{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
 }
 
 .labels{
@@ -156,9 +146,23 @@ header {
 	margin-bottom: 10px;
 }
 
+
+.message{
+	max-height: 200px;
+	max-width: 1000px;
+	min-width: 250px;
+	resize: none;
+}
+
 select{
 	margin-bottom:10px;
 }
+
+.formButton{
+	display:flex;
+	justify-content:flex-end;
+}
+/********CONTACT END********/
 /* This is where the main css goes */
 
 
@@ -196,3 +200,38 @@ footer {
 	margin-top: 10px;
 }
 /********** FOOTER end **********/
+
+
+
+/*Media queries*/
+
+@media (max-width:768px) {
+
+
+
+
+/******CONTACT FORM START*******/
+	.formHeading{
+		font-size: 20px;
+	}
+
+	.formField{
+		padding:10px 25px 10px 25px;
+		border-radius: 5px;
+	}
+
+		select{
+			margin-bottom:5px;
+		}
+
+.labels{
+	margin-bottom: 5px;
+}
+
+	.message{
+		width: 230px;
+		resize: none;
+	}
+	/******CONTACT FORM END*******/
+}
+}
