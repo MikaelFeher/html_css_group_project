@@ -118,27 +118,31 @@ header {
 
 #page {
 	text-align:center;
+	margin-top: 100px;
 }
 
-#nav {
-	display: flex;
-	text-align:center;
-	margin: 50px;
-	justify-content: space-around;
+#logo {
+	margin-bottom: 50px;
 }
+
+
+
 
 #main_product_container {
 	background-color: white;
 	width:800px;
-	margin:0 auto;
+	margin: auto;
 	display: flex;
 	justify-content: space-around;
+}
+.table_container{
+	padding: 5px;
 }
 
 table {
 	font-family: arial,sans-serif;
 	border-collapse:collapse;
-	width: 100%;
+	/* width: 100%; */
 }
 
 td, th{
