@@ -114,11 +114,9 @@ header {
 /********* LANDING PAGE *********/
 
 #landing_page_banner {
-	width: 100%;
-	/*border: 1px solid #333;*/
+	width: 85%;
 	box-shadow: 0 0 20px 0 #333;
-	/*border-radius: 10px;*/
-	/*padding: 7%;*/
+	border-radius: 10px;
 	margin: 3% auto;
 	text-align: center;
 }
@@ -126,35 +124,31 @@ header {
 	padding: 5% 5% 0 5%;
 	text-transform: uppercase;
 	letter-spacing: .1em;
-	/*background-color: goldenrod;*/
 }
 
 #landing_page_banner h2 {
 	padding: 5%;
 }
+
+#landing_page_banner span {
+	color: red;
+	font-size: 1.3em;
+}
 #landing_page_content {
 	margin: 0 auto;
-	/*background-color: cyan;*/
 	display: flex;
 	justify-content: center;
 }
 #landing_page_product_button {
 	padding: 10%;
-	width: 100%;
 	border-radius: 10px;
 	border: none;
 	outline: none;
 	background-color: blue;
 	color: #ddd;
 	font-size: 2em;
+	cursor: pointer;
 }
-
-/*.landing_page_product_button a {
-	height: 100%;
-	width: 100%;
-	text-decoration: none;
-	background-color: yellow;
-}*/
 /******* LANDING PAGE end *******/
 
 
@@ -203,11 +197,11 @@ tr:nth-child(even) {
 	height:81%;
 	display:flex;
 	justify-content:center;
-	align-items:center;
-
+	align-items: center;
 }
 #contactForm{
 	max-height: 500px;
+	align-items:center;
 }
 #textarea{
 	display:flex;
