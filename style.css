@@ -113,6 +113,50 @@ header {
 
 /********* MAIN CONTENT *********/
 
+
+/******** PRODUCT CONTENT ********/
+#content,
+ul li a{ box-shadow: 0px 1px 1px #999; }
+
+#main_product_container {
+background-color: white;
+width:800px;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+table {
+  font-family: arial,sans-serif;
+  border-collapse:collapse;
+  width: 100%;
+}
+
+td, th{
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #dddddd;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.product_buy_button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: green;
+color: white;
+border: none;
+letter-spacing: .1em;
+}
+.product_buy_button:active {
+background-color: rgba(0, 100, 0, 0.5);
+}
+/******** PRODUCT CONTENT END ********/
+
+
+
 /********CONTACT CONTENT********/
 #formdiv{
 	height:81%;
