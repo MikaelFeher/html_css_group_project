@@ -118,6 +118,48 @@ header {
 
 
 /********* MAIN CONTENT *********/
+/* This is where the main css goes */
+
+/********* LANDING PAGE *********/
+
+#landing_page_banner {
+	width: 85%;
+	box-shadow: 0 0 20px 0 #333;
+	border-radius: 10px;
+	margin: 3% auto;
+	text-align: center;
+}
+#landing_page_banner h1 {
+	padding: 5% 5% 0 5%;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+#landing_page_banner h2 {
+	padding: 5%;
+}
+
+#landing_page_banner span {
+	color: red;
+	font-size: 1.3em;
+}
+#landing_page_content {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+#landing_page_product_button {
+	padding: 10%;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	background-color: blue;
+	color: #ddd;
+	font-size: 2em;
+	cursor: pointer;
+	box-shadow: 0 0 20px 0 #333;
+}
+/******* LANDING PAGE end *******/
 
 
 /******** PRODUCT CONTENT ********/
