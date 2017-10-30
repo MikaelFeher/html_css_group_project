@@ -148,6 +148,7 @@ header {
 	color: #ddd;
 	font-size: 2em;
 	cursor: pointer;
+	box-shadow: 0 0 20px 0 #333;
 }
 /******* LANDING PAGE end *******/
 
