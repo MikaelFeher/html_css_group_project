@@ -52,9 +52,6 @@ header {
 	height: 100%
 }
 
-.header_links_list {
-}
-
 .header_links_listitem {
 	height: 100%;
 	display: flex;
@@ -112,24 +109,68 @@ header {
 
 
 /********* MAIN CONTENT *********/
+/* This is where the main css goes */
+
+/********* LANDING PAGE *********/
+
+#landing_page_banner {
+	width: 100%;
+	/*border: 1px solid #333;*/
+	box-shadow: 0 0 20px 0 #333;
+	/*border-radius: 10px;*/
+	/*padding: 7%;*/
+	margin: 3% auto;
+	text-align: center;
+}
+#landing_page_banner h1 {
+	padding: 5% 5% 0 5%;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	/*background-color: goldenrod;*/
+}
+
+#landing_page_banner h2 {
+	padding: 5%;
+}
+#landing_page_content {
+	margin: 0 auto;
+	/*background-color: cyan;*/
+	display: flex;
+	justify-content: center;
+}
+#landing_page_product_button {
+	padding: 10%;
+	width: 100%;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	background-color: blue;
+	color: #ddd;
+	font-size: 2em;
+}
+
+/*.landing_page_product_button a {
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	background-color: yellow;
+}*/
+/******* LANDING PAGE end *******/
 
 
 /******** PRODUCT CONTENT ********/
-#content,
-ul li a{ box-shadow: 0px 1px 1px #999; }
 
 #main_product_container {
-background-color: white;
-width:800px;
-  margin:0 auto;
-  display: flex;
-  justify-content: space-around;
+	background-color: white;
+	width:1000px;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-around;
 }
 
 table {
   font-family: arial,sans-serif;
   border-collapse:collapse;
-  width: 100%;
 }
 
 td, th{
@@ -143,15 +184,15 @@ tr:nth-child(even) {
 }
 
 .product_buy_button {
-  padding: 10px 20px;
-  border-radius: 10px;
-  background-color: green;
-color: white;
-border: none;
-letter-spacing: .1em;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background-color: green;
+	color: white;
+	border: none;
+	letter-spacing: .1em;
 }
 .product_buy_button:active {
-background-color: rgba(0, 100, 0, 0.5);
+	background-color: rgba(0, 100, 0, 0.5);
 }
 /******** PRODUCT CONTENT END ********/
 
@@ -203,7 +244,6 @@ background-color: rgba(0, 100, 0, 0.5);
 select{
 	margin-bottom:10px;
 }
-/* This is where the main css goes */
 
 
 
