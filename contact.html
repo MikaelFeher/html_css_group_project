@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
@@ -8,11 +9,12 @@
 	<link rel="stylesheet" href="style.css">
 	<title>Webshop - Kontakta Oss</title>
 </head>
+
 <body>
 	<!-- HEADER -->
 	<header>
 		<div class="header_logo_container">
-			<h1 class="header_logo">Vår<span>Häftiga</span>Webshop</h1>
+			<h1 class="header_logo">WebPro</h1>
 		</div>
 		<div class="header_searchbar_container">
 			<span class="header_searchbar_icon">&#128270;</span><input type="text" class="header_searchbar" placeholder="Sök vara här...">
@@ -20,7 +22,7 @@
 		<div class="header_links_container">
 			<div class="header_links_listitem"><a href="index.html">Hem</a></div>
 			<div class="header_links_listitem"><a href="products.html">Produkter</a></div>
-			<div class="active_page"><a href="contact.html">Kontakta Oss</a></div>
+			<div class="active_page"><a href="contact.html">Kontakt</a></div>
 			<div class="header_links_listitem"><a href="checkout.html">Till Kassan</a></div>
 		</div>
 	</header>
@@ -30,57 +32,59 @@
 
 
 
-	<form class="" action="index.html" method="post" style="display:flex; justify-content:center; margin-top:10%;">
-		<fieldset style="padding:20px 100px 20px 100px; ">
 
-			<legend><h2>Kontakta oss</h2></legend>
 
-			<div>
-				<label for="">Namn:
-					<input type="text" name="name" value="">
-				</label>
-			</div>
+	<div class="formdiv">
+		<form class="contactForm" action="contact.html" method="post">
 
-			<div>
-				<label for="">Efternamn:
-					<input type="text" name="lastname" value="">
-				</label>
-			</div>
+				<h1 class="formHeading">Kontakt</h1>
 
-			<div>
-				<label for="">E-post
-					<input type="email" name="email" value="">
-				</label>
-			</div>
+				<div class="labelBox">
+					<div class="labels">
+						<label for="name">Namn:</label>
+						<input id="name" type="text" name="name" value="" placeholder="t.ex. August">
+					</div>
 
-			<div>
-				<p>
-					<label for="topic">Vad gäller ditt ärende?</label>
+					<div class="labels">
+						<label for="lastname">Efternamn:</label>
+						<input id="lastname" type="text" name="lastname" value="" placeholder="t.ex. Svensson">
+					</div>
+
+					<div class="labels">
+						<label for="">E-post:</label>
+						<input id="email" type="email" name="email" value="" placeholder="e-post adress här">
+					</div>
+				</div>
+
+				<div class="labels">
+					<p>
+						<label for="topic">Vad gäller ditt ärende?</label>
+					</p>
 					<select id="topic" name="referrer">
-						<option value="HTML">HTML</option>
-						<option value="HTML">CSS</option>
-						<option value="HTML">Service</option>
-					</select>
-				</p>
-			</div>
-			<br>
+							<option value="HTML">HTML</option>
+							<option value="HTML">CSS</option>
+							<option value="HTML">Service</option>
+						</select>
 
-			<div>
-				<p>
-					<label for="message">Meddelande:</label>
-				</p>
-				<textarea id="message" name="comments" rows="8" cols="60" placeholder="Skriv här...">
-				</textarea>
-			</div>
-
-			<div style="display:flex;justify-content:flex-end;">
-				<button type="submit">Skicka meddelande</button>
-			</div>
-		</fieldset>
-	</form>
+				</div>
 
 
+				<div>
+					<p>
+						<label for="message">Meddelande:</label>
+					</p>
+					<textarea class="message" name="comments" rows="8" cols="60" placeholder="Skriv här..."></textarea>
+				</div>
 
+				<div class="formButton">
+					<button type="submit">Skicka meddelande</button>
+				</div>
+
+
+		</form>
+
+
+	</div>
 
 	<!-- Put main content here... -->
 
@@ -117,4 +121,5 @@
 	</footer>
 	<!-- FOOTER end -->
 </body>
+
 </html>
