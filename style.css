@@ -478,6 +478,10 @@ footer {
 		margin-bottom: 10%;
 
 	}
+.header_links_container{
+  width: 65%;
+}
+
 	header div a {
 		font-size: 10px;
 	}
