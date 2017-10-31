@@ -30,10 +30,6 @@
 
 	<!-- MAIN CONTENT -->
 
-
-
-
-
 	<div class="formdiv">
 		<form class="contactForm" action="contact.html" method="post">
 
@@ -42,17 +38,17 @@
 				<div class="labelBox">
 					<div class="labels">
 						<label for="name">Namn:</label>
-						<input id="name" type="text" name="name" value="" placeholder="t.ex. August">
+						<input id="name" type="text" name="name" value="" placeholder="t.ex. August" required pattern="[A-z]" >
 					</div>
 
 					<div class="labels">
 						<label for="lastname">Efternamn:</label>
-						<input id="lastname" type="text" name="lastname" value="" placeholder="t.ex. Svensson">
+						<input id="lastname" type="text" name="lastname" value="" placeholder="t.ex. Svensson" required pattern="[A-z]">
 					</div>
 
 					<div class="labels">
 						<label for="">E-post:</label>
-						<input id="email" type="email" name="email" value="" placeholder="e-post adress här">
+						<input id="email" type="email" name="email" value="" placeholder="e-post adress här" required>
 					</div>
 				</div>
 
@@ -65,9 +61,7 @@
 							<option value="HTML">CSS</option>
 							<option value="HTML">Service</option>
 						</select>
-
 				</div>
-
 
 				<div>
 					<p>
@@ -77,28 +71,21 @@
 				</div>
 
 				<div class="formButton">
-					<button type="submit">Skicka meddelande</button>
+					<button type="submit">Skicka</button>
 				</div>
-
-
 		</form>
-
-
 	</div>
 
 	<!-- Put main content here... -->
 
 
-
-
-
-
 	<!-- MAIN CONTENT END -->
 
 	<!-- FOOTER -->
+
 	<footer>
 		<div class="footer_copyright_container">
-			<p class="footer_logo">&copy2017 3M&ampF Solutions</p>
+			<p class="footer_logo">&copy;2017 3M&amp;F Solutions</p>
 		</div>
 		<div class="footer_social_container">
 			<p>Följ oss gärna i sociala medier:</p>

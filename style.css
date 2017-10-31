@@ -11,7 +11,7 @@
 /********************************/
 
 html, body {
-  height: 100%;
+  min-height: 600px;
 }
 
 
@@ -25,6 +25,7 @@ header {
   align-items: center;
   background-color: #000;
   color: #ddd;
+  margin-bottom: 7%;
 }
 
 .header_logo_container {
@@ -184,10 +185,15 @@ header {
 .table_container {
   padding: 5px;
 }
+.table_container h2 {
+	margin-bottom: 5%;
+}
 
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
+  box-shadow: 0px 0px 7px 0 #333;
+
   /* width: 100%; */
 }
 
@@ -210,8 +216,9 @@ tr:nth-child(even) {
   letter-spacing: .1em;
 }
 
-.product_buy_button:active {
-  background-color: rgba(0, 100, 0, 0.5);
+.product_buy_button:hover {
+  /*background-color: rgba(0, 100, 0, 0.5);*/
+  box-shadow: inset 0 0 10px rgba(0, 255, 0, 1);
 }
 
 
@@ -221,61 +228,74 @@ tr:nth-child(even) {
 /********CONTACT CONTENT********/
 
 .formdiv {
-  height: 81%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	/*height: 81%;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 }
 .contactForm{
-	background:blue;
-  color: white;
+	/*background:blue;*/
+	/*color: white;*/
 	padding: 20px;
 	border-radius: 5px;
-	box-shadow: 5px 5px 10px #888888;
+	box-shadow: 0px 0px 7px 0 #333;
 }
 
 .formField {
-  padding: 20px 70px 20px 50px;
-  border-radius: 5px;
-  border-color: #42afc7;
-  background-color: #ff5a5a;
+	padding: 20px 70px 20px 50px;
+	border-radius: 5px;
+	border-color: #42afc7;
+	background-color: #ff5a5a;
 
 }
 
 .formHeading {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .labelBox {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
 }
 
 .labels {
-  display: flex;
-  justify-content: space-between;
-  width: 230px;
-  margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	width: 230px;
+	margin-bottom: 10px;
 }
 
 .message {
-  max-height: 200px;
-  max-width: 1000px;
-  min-width: 250px;
-  resize: none;
+	max-height: 200px;
+	max-width: 1000px;
+	min-width: 250px;
+	resize: none;
 }
 
 select {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .formButton {
 	color:red;
-	
-  display: flex;
-  justify-content: flex-end;
+	display: flex;
+	justify-content: flex-end;
+}
+.formButton button {
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: 1px solid #888;
+	background-color: rgba(0, 150, 0, 1);
+	color: #ddd;
+	font-size: 1.1em;
+	cursor: pointer;
+}
+.formButton button:hover {
+	/*background-color: rgba(0, 150, 0, 1);*/
+	box-shadow: inset 0 0 10px rgba(0, 255, 0, 1);
+
 }
 
 /********CONTACT END********/
@@ -324,60 +344,64 @@ footer {
 /*Media queries*/
 
 @media screen and (max-width:768px) {
-  /******CONTACT FORM START*******/
-  .formHeading {
-    font-size: 20px;
-  }
-  .formField {
-    padding: 10px 25px 10px 25px;
-    border-radius: 5px;
-  }
-  select {
-    margin-bottom: 5px;
-  }
-  .labels {
-    margin-bottom: 5px;
-  }
-  .message {
-    width: 230px;
-    resize: none;
-  }
-  /******CONTACT FORM END*******/
-
-	header div h1{
+	/******CONTACT FORM START*******/
+	.formHeading {
 		font-size: 20px;
 	}
-  header{
-    justify-content: space-around;
+	.formField {
+		padding: 10px 25px 10px 25px;
+		border-radius: 5px;
+	}
+	select {
+		margin-bottom: 5px;
+	}
+	.labels {
+		margin-bottom: 5px;
+	}
+	.message {
+		width: 230px;
+		resize: none;
+	}
+	.formButton button {
+		padding: 5px 10px;
+		border-radius: 10px;
+		font-size: .9em;
+	}
+	/******CONTACT FORM END*******/
 
-  }
-	header div a{
+	header div h1 {
+		font-size: 20px;
+	}
+	header {
+		justify-content: space-around;
+		margin-bottom: 10%;
+
+	}
+	header div a {
 		font-size: 10px;
 	}
-.header_links_listitem{
-  padding-right:5px;
-  padding-left:5px;
-}
-.active_page{  padding-right:5px;
-  padding-left: 5px;}
+	.header_links_listitem {
+		padding-right:5px;
+		padding-left:5px;
+	}
+	.active_page {
+		padding-right:5px;
+		padding-left: 5px;
+	}
 
-	.header_searchbar_container, .header_searchbar_container{
+	.header_searchbar_container, .header_searchbar_container {
 		display: none;
 	}
 
-footer{
-	font-size: 10px;
-  position: absolute;
-}
+	footer {
+		font-size: 10px;
+		position: absolute;
+	}
 
-#main_product_container {
-    width:auto;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-}
-
-
+	#main_product_container {
+		width:auto;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 20px;
+	}
 }
