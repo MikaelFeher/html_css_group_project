@@ -125,8 +125,7 @@ header {
 
 #landing_page_banner {
 	width: 85%;
-	box-shadow: 0 0 20px 0 #333;
-	border-radius: 10px;
+	box-shadow: 0 0 20px 0 #33
 	margin: 3% auto;
 	text-align: center;
 }
@@ -151,7 +150,6 @@ header {
 }
 #landing_page_product_button {
 	padding: 10%;
-	border-radius: 10px;
 	border: none;
 	outline: none;
 	background-color: blue;
@@ -200,16 +198,15 @@ table {
 td, th {
   text-align: left;
   padding: 8px;
-  border: 1px solid #dddddd;
+  border: 1px solid #bbb;
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #ddd;
 }
 
 .product_buy_button {
   padding: 10px 20px;
-  border-radius: 10px;
   background-color: green;
   color: white;
   border: none;
@@ -238,13 +235,11 @@ tr:nth-child(even) {
 	/*background:blue;*/
 	/*color: white;*/
 	padding: 20px;
-	border-radius: 5px;
 	box-shadow: 0px 0px 7px 0 #333;
 }
 
 .formField {
 	padding: 20px 70px 20px 50px;
-	border-radius: 5px;
 	border-color: #42afc7;
 	background-color: #ff5a5a;
 
@@ -285,7 +280,6 @@ select {
 }
 .formButton button {
 	padding: 10px 20px;
-	border-radius: 10px;
 	border: 1px solid #888;
 	background-color: rgba(0, 150, 0, 1);
 	color: #ddd;
@@ -300,6 +294,79 @@ select {
 
 /********CONTACT END********/
 
+/******** CHECKOUT *********/
+
+#checkout {
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+}
+#checkout h2 {
+	text-align: center;
+	margin-top: 50px;
+}
+#checkout table {
+	width: 40%;
+	margin: 0 auto;
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
+#checkout table td {
+}
+.table_button {
+	width: 17%;
+	text-align: center;
+}
+.delete_button {
+	padding: 3px 5px;
+	background-color: red;
+	color: white;
+	border: none;
+	letter-spacing: .1em;
+}
+.all_items {
+	display: flex;
+	flex-direction: column;
+}
+#empty_cart_button_container {
+	width: 40%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-end;
+}
+#empty_cart_button_container button {
+	margin-right: 1%;
+	padding: 10px 20px;
+	background-color: red;
+	color: white;
+	border: none;
+	letter-spacing: .1em;
+}
+.customer-information {
+	width: 100%;
+}
+.customer-information h2 {
+	display: flex;
+	justify-content: center;
+	margin-right: 20%;
+}
+#checkout form {
+	border: 1px solid black;
+	box-shadow: 0px 0px 7px 0 #333;
+	display: flex;
+	justify-content: space-around;
+	width: 50%;
+	margin: 0 auto;
+}
+#checkout form .left_side {
+}
+#checkout form .right_side {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+/******* CHECKOUT END ******/
 
 /* This is where the main css goes */
 
@@ -350,7 +417,6 @@ footer {
 	}
 	.formField {
 		padding: 10px 25px 10px 25px;
-		border-radius: 5px;
 	}
 	select {
 		margin-bottom: 5px;
@@ -364,7 +430,6 @@ footer {
 	}
 	.formButton button {
 		padding: 5px 10px;
-		border-radius: 10px;
 		font-size: .9em;
 	}
 	/******CONTACT FORM END*******/

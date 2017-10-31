@@ -30,22 +30,25 @@
 	<main id="checkout">
 		<h2>Varukorgen</h2>
 
-		<div class="all-items">
+		<div class="all_items">
 			<table>
 				<tr>
-					<th>Namn:</th>
+					<th>Namn</th>
 					<th>Antal</th>
 					<th>Pris</th>
+                    <th></th>
 				</tr>
 				<tr>
 					<td>&lt;div&gt;</td>
-					<td>3></td>
+					<td>3</td>
 					<td>30 :-</td>
-					<td><button>ta bort</button></td>
+                    <td class="table_button"><button class="delete_button"><span>ta bort</span></button></td>
 				</tr>
 			</table>
 				<!--<button>ta bort</button>-->
-			<button>Töm korgen</button>
+            <div id="empty_cart_button_container">
+			    <button class="delete_button">Töm korgen</button>
+            </div>
 		</div>
 
 
@@ -53,32 +56,39 @@
 			<h2>Kunduppgifter</h2>
 
 			<form>
-				<div class="left-side">
-					<div>
-						<label>Förnamn: <input type="text" name="firstname" required pattern="[A-z]+" minlength="1"></label>
+				<div class="left_side">
+					<div class="labels">
+						<label>Förnamn: </label>
+                        <input type="text" name="first_name" required pattern="[A-z]+" minlength="1">
 					</div>
-					<div>
-						<label>Efternamn: <input type="text" name="lastname" required pattern="[A-z]+" minlength="1"></label>
+					<div class="labels">
+						<label>Efternamn: </label>
+                        <input type="text" name="last_name" required pattern="[A-z]+" minlength="1">
 					</div>
-					<div>
-						<label>Adress: <input type="text" name="address" required></label>
+					<div class="labels">
+						<label>Adress: </label>
+                        <input type="text" name="address" required>
 					</div>
-					<div>
-						<label>Postnr: <input type="text" name="zipcode" required pattern="[0-9]{5}"></label>
+					<div class="labels">
+						<label>Postnr: </label>
+                        <input type="text" name="zip_code" required pattern="[0-9]{5}">
 					</div>
-					<div>
-						<label>Postort: <input type="text" name="city" required pattern="[A-z- ]+" minlength="1"></label>
+					<div class="labels">
+						<label>Postort: </label>
+                        <input type="text" name="city" required pattern="[A-z- ]+" minlength="1">
 					</div>
-					<div>
-						<label>Email: <input type="email" name="email" required></label>
+					<div class="labels">
+						<label>Email: </label>
+                        <input type="email" name="email" required>
 					</div>
 				</div>
 
-				<div class="right-side">
+				<div class="right_side">
 					Leveransmetod:
-					<label><input type="radio" name="delivery" value="standard">Standard</label>
-					<label><input type="radio" name="delivery" value="express">Express</label>
-					<label><input type="radio" name="delivery" value="home">Home delivery</label>
+					<label><input type="radio" name="delivery" value="standard" required>Standard</label>
+					<label><input type="radio" name="delivery" value="express" required>Express</label>
+					<label><input type="radio" name="delivery" value="home" required>Home delivery</label>
+					<label><input type="radio" name="delivery" value="digital" required>Digital</LABEL>
 
 					<button>Betala</button>
 				</div>
