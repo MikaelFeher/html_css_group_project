@@ -162,6 +162,9 @@ header {
 	cursor: pointer;
 	box-shadow: 0 0 20px 0 #333;
 }
+#landing_page_product_button:hover{
+  box-shadow: inset 0 0 80px white;}
+
 /******* LANDING PAGE end *******/
 
 
