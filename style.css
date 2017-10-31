@@ -125,7 +125,7 @@ header {
 
 #landing_page_banner {
 	width: 85%;
-	box-shadow: 0 0 20px 0 #33
+	box-shadow: 0 0 20px 0 #333;
 	margin: 3% auto;
 	text-align: center;
 }
