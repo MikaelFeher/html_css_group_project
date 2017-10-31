@@ -335,10 +335,9 @@ select {
 	flex-direction: column;
 }
 #empty_cart_button_container {
-	width: 40%;
+	width: 500px;
 	margin: 0 auto;
-	display: flex;
-	justify-content: flex-end;
+	text-align: end;
 }
 #empty_cart_button_container button {
 	margin-right: 1%;
@@ -369,11 +368,12 @@ select {
 #checkout form .right_side {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 	text-align: left;
 }
 .purchase_button {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-around;
 	align-items: flex-end;
 	padding: 10px 20px;
 	border: 1px solid #888;
@@ -502,6 +502,24 @@ footer {
 	#empty_cart_button_container {
 		margin: 0;
 		width: 90%;
+	}
+	.purchase_button {
+		justify-content: space-around;
+	}
+	#checkout form .right_side {
+		margin-top: 10px;
+	}
+	#checkout form .right_side label {
+		margin-top: 5px;
+	}
+	#checkout form .right_side label:nth-child(4) {
+		margin-bottom: 5px;
+	}
+	#empty_cart_button_container {
+		width: 300px;
+		padding-top: 10px;
+		margin: 0 auto;
+		text-align: center;
 	}
 
 	/*****CHECKOUT END*******/
