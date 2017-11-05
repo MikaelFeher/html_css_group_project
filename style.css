@@ -222,6 +222,7 @@ tr:nth-child(even) {
   color: white;
   border: none;
   letter-spacing: .1em;
+	cursor: pointer;
 }
 
 .product_buy_button:hover {
@@ -343,6 +344,7 @@ select {
 	color: white;
 	border: none;
 	letter-spacing: .1em;
+    cursor: pointer;
 }
 .all_items {
 	display: flex;
