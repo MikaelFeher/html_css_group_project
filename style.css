@@ -13,6 +13,7 @@
 html {
     position: relative;
     min-height: 100%;
+    max-height: auto;
 }
 body {
     margin: 0 0 120px; /* bottom = footer height */
@@ -374,7 +375,7 @@ select {
 	/*margin-right: 20%;*/
 }
 #checkout form {
-	border: 1px solid black;
+	
 	box-shadow: 0px 0px 7px 0 #333;
 	display: flex;
 	justify-content: space-around;
@@ -426,6 +427,7 @@ footer {
   align-items: center;
   background-color: #000;
   color: #ddd;
+
 }
 
 .footer_social_icons_container {
@@ -455,9 +457,7 @@ footer {
 	.formHeading {
 		font-size: 20px;
 	}
-	.formField {
-		padding: 10px 25px 10px 25px;
-	}
+
 	select {
 		margin-bottom: 5px;
 	}
@@ -505,6 +505,7 @@ footer {
 	footer {
 		font-size: 10px;
 		position: absolute;
+    margin-top: 50px;
 	}
 
 	#main_product_container {
