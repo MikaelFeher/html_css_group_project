@@ -32,7 +32,7 @@
   <main id="checkout">
         <h2>Varukorgen</h2>
 
-    <section class="all_items">
+    <div class="all_items">
       <table>
         <tr>
           <th>Namn</th>
@@ -51,14 +51,14 @@
       <div id="empty_cart_button_container">
         <button class="delete_button">Töm korgen</button>
       </div>
-    </section>
+    </div>
 
 
     <div class="customer-information">
             <h2>Kunduppgifter</h2>
 
       <form class="contactForm">
-        <section class="left_side">
+        <div class="left_side">
           <div>
             <label class="labels">Förnamn:
             <input type="text" name="first_name" required pattern="[A-z]+" minlength="1">
@@ -89,9 +89,9 @@
             <input type="email" name="email" required>
             </label>
           </div>
-        </section>
+        </div>
 
-        <section class="right_side">
+        <div class="right_side">
           Leveransmetod:
           <label><input type="radio" name="delivery" value="standard" required>Standard</label>
           <label><input type="radio" name="delivery" value="express" required>Express</label>
@@ -99,7 +99,7 @@
           <label><input type="radio" name="delivery" value="digital" required>Digital</LABEL>
 
           <button class="product_buy_button purchase_button">Betala</button>
-        </section>
+        </div>
       </form>
     </div>
   </main>
