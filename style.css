@@ -1,136 +1,126 @@
 /* GENERAL SETTINGS */
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
 }
-
 
 /********************************/
 
 html {
-    position: relative;
-    min-height: 100%;
-    max-height: auto;
+	position: relative;
+	min-height: 100%;
+	max-height: auto;
 }
 body {
-    margin: 0 0 120px; /* bottom = footer height */
+	margin: 0 0 120px; /* bottom = footer height */
 }
 
 .title{
-  color: red;
+	color: red;
 }
 
 /************ HEADER ************/
 
 header {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #000;
-  color: #ddd;
-  margin-bottom: 7%;
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #000;
+	color: #ddd;
+	margin-bottom: 7%;
 }
 
 .header_logo_container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .header_logo {
-  letter-spacing: .1em;
+	letter-spacing: .1em;
 }
 
 .header_logo span {
-  color: red;
+	color: red;
 }
 
 .header_searchbar_container {
-  background-color: #fff;
-  display: flex;
-  justify-content: space-around;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-around;
 }
 
 .header_searchbar_icon {
-  margin-right: 7px;
+	margin-right: 7px;
 }
 
 .header_links_container {
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%
 }
 
-.header_links_list {}
-
 .header_links_listitem {
-  height: 100%;
-  display: flex;
-    flex-direction: column;
-  /*align-items: column;*/
-  width: 33%;
-  text-align: center;
-  text-transform: uppercase;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 .header_links_listitem:hover {
-  background-color: red;
-  color: #000;
+	background-color: red;
+	color: #000;
 }
 
 .header_links_listitem a {
-  text-decoration: none;
-  color: #ddd;
-  height: 100%;
-  width: 100%;
-  margin: auto;
-    font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	text-decoration: none;
+	color: #ddd;
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .header_links_listitem:hover a {
-  color: #000;
+	color: #000;
 }
 
 .active_page {
-  height: 100%;
-  display: flex;
-    flex-direction: column;
-  /*align-items: column;*/
-  width: 33%;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: red;
-  color: #000;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: red;
+	color: #000;
 }
 
 .active_page a {
-  text-decoration: none;
-  height: 100%;
-  width: 100%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #000;
-  font-weight: bold;
+	text-decoration: none;
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #000;
+	font-weight: bold;
 }
 
-
 /********** HEADER end **********/
-
-
-/********* MAIN CONTENT *********/
-/* This is where the main css goes */
 
 /********* LANDING PAGE *********/
 
@@ -170,7 +160,8 @@ header {
 	box-shadow: 0 0 20px 0 #333;
 }
 #landing_page_product_button:hover{
-  box-shadow: inset 0 0 80px white;}
+	box-shadow: inset 0 0 80px white;
+}
 
 /******* LANDING PAGE end *******/
 
@@ -178,59 +169,56 @@ header {
 /******** PRODUCT CONTENT ********/
 
 #page {
-  text-align: center;
-  margin-top: 50px;
+	text-align: center;
+	margin-top: 50px;
 }
 
 #logo {
-  margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 #main_product_container {
-  background-color: white;
-  width: 800px;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
+	background-color: white;
+	width: 800px;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
 }
 
 .table_container {
-  padding: 5px;
+	padding: 5px;
 }
 .table_container h2 {
 	margin-bottom: 5%;
 }
 
 table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  box-shadow: 0px 0px 7px 0 #333;
-
-  /* width: 100%; */
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	box-shadow: 0px 0px 7px 0 #333;
 }
 
 td, th {
-  text-align: left;
-  padding: 8px;
-  border: 1px solid #bbb;
+	text-align: left;
+	padding: 8px;
+	border: 1px solid #bbb;
 }
 
 tr:nth-child(even) {
-  background-color: #ddd;
+	background-color: #ddd;
 }
 
 .product_buy_button {
-  padding: 10px 20px;
-  background-color: green;
-  color: white;
-  border: none;
-  letter-spacing: .1em;
+	padding: 10px 20px;
+	background-color: green;
+	color: white;
+	border: none;
+	letter-spacing: .1em;
 	cursor: pointer;
 }
 
 .product_buy_button:hover {
-  /*background-color: rgba(0, 100, 0, 0.5);*/
-  box-shadow: inset 0 0 10px rgba(0, 255, 0, 1);
+	box-shadow: inset 0 0 10px rgba(0, 255, 0, 1);
 }
 
 
@@ -240,15 +228,14 @@ tr:nth-child(even) {
 /********CONTACT CONTENT********/
 
 .formdiv {
-	/*height: 81%;*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  flex-direction: column;
+	flex-direction: column;
 
 }
 .formdiv h1{
-  margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .contactForm{
@@ -256,8 +243,6 @@ tr:nth-child(even) {
 	padding: 20px;
 	box-shadow: 0px 0px 7px 0 #333;
 }
-
-
 
 .formField {
 	padding: 20px 70px 20px 50px;
@@ -308,7 +293,6 @@ select {
 	cursor: pointer;
 }
 .formButton button:hover {
-	/*background-color: rgba(0, 150, 0, 1);*/
 	box-shadow: inset 0 0 10px rgba(0, 255, 0, 1);
 }
 
@@ -345,7 +329,7 @@ select {
 	color: white;
 	border: none;
 	letter-spacing: .1em;
-    cursor: pointer;
+	cursor: pointer;
 }
 .all_items {
 	display: flex;
@@ -370,7 +354,6 @@ select {
 .customer-information h2 {
 	display: flex;
 	justify-content: center;
-	/*margin-right: 20%;*/
 }
 #checkout form {
 	background-color: whitesmoke;
@@ -400,50 +383,41 @@ select {
 	cursor: pointer;
 }
 .delete_button:hover {
-  /*background-color: rgba(0, 100, 0, 0.5);*/
-  box-shadow: inset 0 0 10px white;
+	box-shadow: inset 0 0 10px white;
 }
 
 /******* CHECKOUT END ******/
 
-/* This is where the main css goes */
-
-
-/******* MAIN CONTENT end *******/
-
-
 /************ FOOTER ************/
 
-
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 85px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #000;
-  color: #ddd;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 85px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #000;
+	color: #ddd;
 
 }
 
 .footer_social_icons_container {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
 }
 
 .footer_social_icons_container img {
-  height: 30px;
-  margin: 7px;
+	height: 30px;
+	margin: 7px;
 }
 
 .footer_contact_list {
-  list-style-type: none;
-  margin-top: 10px;
+	list-style-type: none;
+	margin-top: 10px;
 }
-
 
 /********** FOOTER end **********/
 
@@ -480,9 +454,9 @@ footer {
 		margin-bottom: 10%;
 
 	}
-.header_links_container{
-  width: 65%;
-}
+	.header_links_container{
+		width: 65%;
+	}
 
 	header div a {
 		font-size: 10px;
@@ -503,7 +477,7 @@ footer {
 	footer {
 		font-size: 10px;
 		position: absolute;
-    margin-top: 50px;
+		margin-top: 50px;
 	}
 
 	#main_product_container {
@@ -529,11 +503,10 @@ footer {
 		margin: 0;
 		width: 90%;
 	}
-  .red{
-    color:white;
-    background-color: red;
-
-  }
+	.red{
+		color:white;
+		background-color: red;
+	}
 
 	.purchase_button {
 		justify-content: space-around;
